@@ -31,6 +31,7 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.obsidian"),
 	require("plugins.render-markdown"),
+	require("plugins.gopher"),
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`

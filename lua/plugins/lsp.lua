@@ -154,7 +154,18 @@ return {
 		local servers = {
 			ts_ls = {},
 			-- clangd = {},
-			gopls = {},
+			gopls = {
+				settings = {
+					gopls = {
+						completeUnimported = true,
+						usePlaceholders = true,
+						analyses = {
+							unusedparams = true,
+							shadow = true,
+						},
+					},
+				},
+			},
 			-- pyright = {},
 			-- rust_analyzer = {},
 			-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs

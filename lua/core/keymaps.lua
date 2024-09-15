@@ -74,3 +74,7 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 
 -- Obsidian Commands
 vim.keymap.set("n", "<leader>on", ":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>")
+
+-- Go shortcuts
+vim.keymap.set("n", "<leader>ef", ":GoIfErr<CR>", opts) -- open new tab
+vim.keymap.set("n", "<leader>tg", ":GoTagAdd json<CR>", opts) -- open new tab

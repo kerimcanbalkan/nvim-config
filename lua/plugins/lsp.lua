@@ -153,6 +153,7 @@ return {
 		--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 		local servers = {
 			ts_ls = {},
+			emmet_language_server = {},
 			-- clangd = {},
 			gopls = {
 				settings = {
@@ -174,7 +175,7 @@ return {
 			--    https://github.com/pmizio/typescript-tools.nvim
 			--
 			-- But for many setups, the LSP (`tsserver`) will work just fine
-			html = { filetypes = { "html", "twig", "hbs" } },
+			html = { filetypes = { "html", "twig", "hbs", "tsx", "jsx", "svelte" } },
 			cssls = {},
 			tailwindcss = {},
 			dockerls = {},
